@@ -5,7 +5,7 @@ $headers = array();
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.27.0';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
-$headers[] = 'X-Location: -7.613805,110.633676';
+$headers[] = 'X-Location: -6,117412, 106,153527';
 
 // Menu
 
