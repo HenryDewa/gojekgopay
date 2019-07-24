@@ -5,7 +5,7 @@ $headers = array();
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.27.0';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
-$headers[] = 'X-Location: -6,117412, 106,153527';
+$headers[] = 'X-Location: -6,117412,106,153527';
 
 // Menu
 
@@ -42,7 +42,7 @@ $tools = trim(fgets(STDIN));
 				// Claim Voucher
 				$token = $verifs->data->access_token;
 				$headers[] = 'Authorization: Bearer '.$token;
-				$data3 = '{"promo_code":"GOFOODLAGI"}';
+				$data3 = '{"promo_code":"MAKSIGOFOOD"}';
 				$claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 				$claims = json_decode($claim[0]);
 				if ($claims->success == true) {
@@ -82,7 +82,7 @@ $tools = trim(fgets(STDIN));
 				// Claim Voucher
 				$token = $verifs->data->access_token;
 				$headers[] = 'Authorization: Bearer '.$token;
-				$data3 = '{"promo_code":"GOFOODLAGI"}';
+				$data3 = '{"promo_code":"MAKSIGOFOOD"}';
 				$claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 				$claims = json_decode($claim[0]);
 				if ($claims->success == true) {
